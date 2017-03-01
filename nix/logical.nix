@@ -14,7 +14,7 @@
         /var/log/temp/*.loo {
             missingok
             hourly
-            rotate 8
+            rotate 11
             compress
         }
         '';
