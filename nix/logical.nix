@@ -79,8 +79,14 @@ services.grafana = {
 };
 
 
-      services.postgresql.enable = true;
-      services.postgresql.authentication = "local all all ident";
+      services.postgresql = {
+        enable = true;
+        postgresql.authentication = "local all all ident";
+        enableTCPIP = true;
+        dataDir = "/var/db/postgresql";
+        port = 5432;
+       };
+
 
       environment.systemPackages = [
           pkgs.jdk
