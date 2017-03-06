@@ -1,7 +1,7 @@
 {
   network.description = "NIXOPS server";
 
-  webserver =
+  nixos =
     { config, pkgs, ... }:
     { 
     
