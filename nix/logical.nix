@@ -74,9 +74,10 @@ services.grafana = {
 services.graphite = {
      dataDir = "/var/graphitedata";
      web.enable = true;
-      carbon = {
-       enableCache = true;
-       };
+      
+#      carbon = {
+#       enableCache = true;
+#       };
       
 #      carbon.config = {
 #       [cache]
