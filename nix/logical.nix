@@ -8,8 +8,16 @@
      ## master branch xxx
      
      
-     services.graphite.web.enable = true;
-     services.grafana.enable = true;
+   services.grafana = {
+   enable = true;
+   addr = "0.0.0.0";
+   port = 3000;
+   security = {
+     adminUser = "admin";
+     adminPassword = "admin";
+    };
+   };
+
 
 #services.postgresql = {
 #        enable = true;
