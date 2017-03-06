@@ -6,6 +6,9 @@
     { 
     
      ## master branch xxx
+     
+     
+     services.graphite.web.enable = true;
 
 #services.postgresql = {
 #        enable = true;
