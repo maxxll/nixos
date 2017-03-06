@@ -8,9 +8,9 @@
      ## master branch xxx
      
      
-      services.httpd.enable = true;
-      services.httpd.adminAddr = "maxxl@tut.by";
-      services.httpd.documentRoot = "/www";
+      #services.httpd.enable = true;
+      #services.httpd.adminAddr = "maxxl@tut.by";
+      #services.httpd.documentRoot = "/www";
 
      
      
