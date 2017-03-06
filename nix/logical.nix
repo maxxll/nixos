@@ -17,6 +17,19 @@
      web.enable = true;
       carbon = {
        enableCache = true;
+       config = {
+       ''
+  [cache]
+  # Listen on localhost by default for security reasons
+  UDP_RECEIVER_INTERFACE = 127.0.0.1
+  PICKLE_RECEIVER_INTERFACE = 127.0.0.1
+  LINE_RECEIVER_INTERFACE = 127.0.0.1
+  CACHE_QUERY_INTERFACE = 127.0.0.1
+  # Do not log every update
+  LOG_UPDATES = False
+  LOG_CACHE_HITS = False  
+''
+};
       };
     };
 
