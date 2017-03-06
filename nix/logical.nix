@@ -17,6 +17,14 @@
      adminPassword = "admin";
     };
    };
+   
+     services.graphite = {
+      web.enable = true;
+      carbon = {
+        enableCache = true;
+        };
+        };
+
 
 
 #services.postgresql = {
