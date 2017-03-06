@@ -79,7 +79,17 @@ services.graphite = {
        enableCache = true;
        };
       
-#      carbon.config = {
+      carbon.config = {
+      DATABASES = {
+      'default': {
+        'NAME': 'grafana',
+        'ENGINE': 'postgresql',
+        'USER': 'grafana',
+        'PASSWORD': 'Grafana-1',
+        'HOST': '127.0.0.1',
+        'PORT': ''
+    }
+}
 #       [cache]
 #        # Listen on localhost by default for security reasons
 #        UDP_RECEIVER_INTERFACE = 127.0.0.1
@@ -89,7 +99,7 @@ services.graphite = {
 #        # Do not log every update
 #        LOG_UPDATES = False
 #        LOG_CACHE_HITS = False  
-#       };
+       };
       
     };
 
