@@ -72,6 +72,10 @@ services.grafana = {
     enable=true;
     port=3000;
     addr = "0.0.0.0";
+    database.host = 127.0.0.1:5432;
+    database.name = grafana;
+    database.user = grafana;
+    database.password = Grafana-1;
 };
 
 
