@@ -88,8 +88,10 @@ services.graphite = {
         'PASSWORD': 'Grafana-1',
         'HOST': '127.0.0.1',
         'PORT': ''
-    };
+    }
 }
+};
+
 #       [cache]
 #        # Listen on localhost by default for security reasons
 #        UDP_RECEIVER_INTERFACE = 127.0.0.1
