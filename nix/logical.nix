@@ -5,7 +5,40 @@
     { config, pkgs, ... }:
     { 
     
-     ## master branch da1
+     ## master branch
+     
+     
+     +#  services = {
++#
++# postgresql.enable = true;
++#  postgresql.authentication = "local all all ident";
++#
++#        logrotate = {
++#        enable = true;
++#        config = ''
++#        /var/log/restart-backends.log {
++#            missingok
++#            daily
++#            rotate 10
++#            compress
++#        }
++#        /var/log/tmp/* {
++#            missingok
++#            daily
++#            rotate 18
++#            compress
++#        }
++#        '';
++#        };
++#
++#  cron = {
++#         enable = true;
++#         systemCronJobs = [
++#           "* * * * 0 find /tmp -type f ! -name access.log -delete"
++#           "*/1 * * * * root echo '`date` restart-backends' >> /var/log/restart-backends.log" ];
++#      };
++
+
 
       services.httpd.enable = true;
       services.httpd.adminAddr = "maxxl@tut.by";
