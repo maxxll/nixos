@@ -89,7 +89,7 @@ services.grafana = {
     database.name = "grafana";
     database.user = "grafana";
     database.password = "Grafana-1";
-    database.type = "postgresql";
+    database.type = "postgres";
 };
 
 
