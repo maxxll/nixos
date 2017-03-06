@@ -12,28 +12,7 @@
 #        authentication = "local all all ident";
 #      };
 
- services.graphite = {
-     dataDir = "/var/graphitedata";
-     web.enable = true;
-      carbon = {
-       enableCache = true;
-       };
-      
-#      carbon.config = {
-#       [cache]
-#        # Listen on localhost by default for security reasons
-#        UDP_RECEIVER_INTERFACE = 127.0.0.1
-#        PICKLE_RECEIVER_INTERFACE = 127.0.0.1
-#        LINE_RECEIVER_INTERFACE = 127.0.0.1
-#        CACHE_QUERY_INTERFACE = 127.0.0.1
-#        # Do not log every update
-#        LOG_UPDATES = False
-#        LOG_CACHE_HITS = False  
-#       };
-      
-    };
-
-
+ 
      
 #  services = {
 #
@@ -91,6 +70,28 @@ services.grafana = {
     #database.password = "Grafana-1";
     #database.type = "postgresql";
 };
+
+services.graphite = {
+     dataDir = "/var/graphitedata";
+     web.enable = true;
+      
+#      carbon = {
+#       enableCache = true;
+#       };
+      
+#      carbon.config = {
+#       [cache]
+#        # Listen on localhost by default for security reasons
+#        UDP_RECEIVER_INTERFACE = 127.0.0.1
+#        PICKLE_RECEIVER_INTERFACE = 127.0.0.1
+#        LINE_RECEIVER_INTERFACE = 127.0.0.1
+#        CACHE_QUERY_INTERFACE = 127.0.0.1
+#        # Do not log every update
+#        LOG_UPDATES = False
+#        LOG_CACHE_HITS = False  
+#       };
+      
+    };
 
 
       services.postgresql = {
