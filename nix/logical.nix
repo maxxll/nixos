@@ -81,7 +81,7 @@ services.grafana = {
 
       services.postgresql = {
         enable = true;
-        #authentication = "local all all ident";
+        authentication = "local all all md5";
         enableTCPIP = true;
         dataDir = "/var/db/postgresql";
         port = 5432;
