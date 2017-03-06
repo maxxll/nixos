@@ -7,10 +7,10 @@
     
      ## master branch
 
-services.postgresql = {
-        enable = true;
-        authentication = "local all all ident";
-      };
+#services.postgresql = {
+#        enable = true;
+#        authentication = "local all all ident";
+#      };
 
  services.graphite = {
      dataDir = "/var/graphitedata";
