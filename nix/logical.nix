@@ -60,37 +60,37 @@
 
       networking.firewall.allowedTCPPorts = [ 80 3000 22 44 ];
 
-services.grafana = {
-    enable=true;
-    port=3000;
-    addr = "0.0.0.0";
-    #database.host = "127.0.0.1:5432";
-    #database.name = "grafana";
-    #database.user = "grafana";
-    #database.password = "Grafana-1";
-    #database.type = "postgresql";
-};
+#services.grafana = {
+#   enable=true;
+#    port=3000;
+#    addr = "0.0.0.0";
+#    #database.host = "127.0.0.1:5432";
+#    #database.name = "grafana";
+#    #database.user = "grafana";
+#    #database.password = "Grafana-1";
+#    #database.type = "postgresql";
+#};
 
-services.graphite = {
-     dataDir = "/var/graphitedata";
-     web.enable = true;
-      
-      carbon = {
-       enableCache = true;
-       };
-      
-      carbon.config = {
-      DATABASES = {
-        'default': {
-        'NAME': 'grafana',
-        'ENGINE': 'postgresql',
-        'USER': 'grafana',
-        'PASSWORD': 'Grafana-1',
-        'HOST': '127.0.0.1',
-        'PORT': ''
-    };
-};
-};
+#services.graphite = {
+#     dataDir = "/var/graphitedata";
+#     web.enable = true;
+#      
+#      carbon = {
+#       enableCache = true;
+#       };
+#      
+ #     carbon.config = {
+ #     DATABASES = {
+ #       'default': {
+ #       'NAME': 'grafana',
+ #       'ENGINE': 'postgresql',
+ #       'USER': 'grafana',
+ #       'PASSWORD': 'Grafana-1',
+ #       'HOST': '127.0.0.1',
+ #       'PORT': ''
+ #   };
+#};
+#};
 
 #       [cache]
 #        # Listen on localhost by default for security reasons
@@ -101,9 +101,9 @@ services.graphite = {
 #        # Do not log every update
 #        LOG_UPDATES = False
 #        LOG_CACHE_HITS = False  
-       };
-      
-    };
+ #      };
+ #     
+ #   };
 
 
       services.postgresql = {
