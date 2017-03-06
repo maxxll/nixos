@@ -9,6 +9,7 @@
      
      
      services.graphite.web.enable = true;
+     services.grafana.enable = true;
 
 #services.postgresql = {
 #        enable = true;
