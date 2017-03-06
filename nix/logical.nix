@@ -81,14 +81,14 @@ services.graphite = {
       
       carbon.config = {
       DATABASES = {
-      'default': {
+        'default': {
         'NAME': 'grafana',
         'ENGINE': 'postgresql',
         'USER': 'grafana',
         'PASSWORD': 'Grafana-1',
         'HOST': '127.0.0.1',
         'PORT': ''
-    }
+    };
 }
 #       [cache]
 #        # Listen on localhost by default for security reasons
