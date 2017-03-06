@@ -108,7 +108,7 @@
 
       services.postgresql = {
         enable = true;
-        authentication = "host all all postgres password";
+        authentication = "local all postgres ident";
         enableTCPIP = true;
         dataDir = "/var/db/postgresql";
         port = 5432;
