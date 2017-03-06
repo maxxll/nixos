@@ -8,7 +8,7 @@
      ## master branch
      
      
-     +#  services = {
+#  services = {
 #
 # postgresql.enable = true;
 #  postgresql.authentication = "local all all ident";
