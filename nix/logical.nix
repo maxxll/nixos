@@ -61,7 +61,7 @@
         }
         '';
 
-      networking.firewall.allowedTCPPorts = [ 80 3000 22 44 ];
+      networking.firewall.allowedTCPPorts = [ 80 3000 22 44 8080 ];
 
 #services.grafana = {
 #    enable=true;
