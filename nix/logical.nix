@@ -6,7 +6,21 @@
     { 
     
      ## master branch
-     
+
+services.postgresql = {
+        enable = true;
+        authentication = "local all all ident";
+      };
+
+ services.graphite = {
+     dataDir = "/var/graphitedata";
+     web.enable = true;
+      carbon = {
+       enableCache = true;
+      };
+    };
+
+
      
 #  services = {
 #
@@ -38,9 +52,9 @@
 #           "*/1 * * * * root echo '`date` restart-backends' >> /var/log/restart-backends.log" ];
 #      };
 
-      services.httpd.enable = true;
-      services.httpd.adminAddr = "maxxl@tut.by";
-      services.httpd.documentRoot = "/www";
+      #services.httpd.enable = true;
+      #services.httpd.adminAddr = "maxxl@tut.by";
+      #services.httpd.documentRoot = "/www";
       
       services.logrotate.enable = true;
       services.logrotate.config = ''
