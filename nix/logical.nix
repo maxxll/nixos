@@ -193,6 +193,8 @@ services.zabbixAgent.extraConfig =
           pkgs.php
           pkgs.logrotate
           pkgs.git
+          pkgs.python
+          
           #pkgs.pipelight
           #pkgs.jdk
           
