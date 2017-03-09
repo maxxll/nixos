@@ -12,7 +12,7 @@
       #services.httpd.adminAddr = "maxxl@tut.by";
       #services.httpd.documentRoot = "/www";
 
-services.zabbixAgent.enable;
+services.zabbixAgent.enable = true;
 services.zabbixAgent.extraConfig = {
 ''
 };
