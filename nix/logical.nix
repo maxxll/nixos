@@ -5,10 +5,13 @@
     { config, pkgs, ... }:
     { 
     
-     ## master branch xxx
+     ## master branch
+     
+     
+     
      
      services.statsd = {
-      enable = true;
+      enable = false;
       graphiteHost = "localhost";
       graphitePort = 2003;
       };
@@ -190,6 +193,7 @@ services.zabbixAgent.extraConfig =
           pkgs.php
           pkgs.logrotate
           pkgs.git
+          pkgs.pipelight
         ];
 
     };
