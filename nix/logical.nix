@@ -13,9 +13,6 @@
       #services.httpd.documentRoot = "/www";
 
 services.zabbixAgent.enable = true;
-services.zabbixAgent.extraConfig = {
-'';
-};
      
      
    services.grafana = {
