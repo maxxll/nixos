@@ -193,7 +193,7 @@ services.zabbixAgent.extraConfig =
           pkgs.php
           pkgs.logrotate
           pkgs.git
-          pkgs.pipelight
+          #pkgs.pipelight
         ];
 
     };
