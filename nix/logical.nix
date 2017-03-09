@@ -186,7 +186,7 @@ services.zabbixAgent.extraConfig =
 
 
       environment.systemPackages = [
-          pkgs.jdk
+          
           pkgs.wget
           pkgs.mc
           pkgs.sqlite
@@ -194,6 +194,8 @@ services.zabbixAgent.extraConfig =
           pkgs.logrotate
           pkgs.git
           #pkgs.pipelight
+          #pkgs.jdk
+          
         ];
 
     };
