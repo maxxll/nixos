@@ -13,7 +13,7 @@
       #services.httpd.documentRoot = "/www";
 
 services.zabbixAgent.enable = true;
-services.zabbixAgent.extraConfig =
+services.zabbixAgent.extraConfig = {
 UserParameter = testparameter, df -h
 '';
 
