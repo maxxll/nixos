@@ -12,7 +12,7 @@
       #services.httpd.adminAddr = "maxxl@tut.by";
       #services.httpd.documentRoot = "/www";
 
-services.zabbixAgent.enable = true;
+services.zabbixAgent.enable = false;
 services.zabbixAgent.extraConfig =
     ''      
       UserParameter=test_par,df|grep "/dev/disk/by-label/nixos"| awk '{ print $4 }'
