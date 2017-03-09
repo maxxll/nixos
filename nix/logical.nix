@@ -12,6 +12,8 @@
       graphiteHost = "localhost";
       graphitePort = 2003;
       };
+      
+      services.collectd.enable = true;
      
      
       #services.httpd.enable = true;
