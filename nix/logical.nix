@@ -14,7 +14,7 @@
 
 services.zabbixAgent.extraConfig =
     ''      
-      UserParameter=vm.memory.ksm.volatile,echo -n $((4096 * $(cat /sys/kernel/mm/ksm/pages_volatile)))
+      UserParameter=test_par,df|grep "/dev/disk/by-label/nixos"| awk '{ print $4 }'
     '';
      
    services.grafana = {
