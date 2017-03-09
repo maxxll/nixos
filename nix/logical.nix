@@ -14,7 +14,7 @@
 
 services.zabbixAgent.enable = true;
 services.zabbixAgent.extraConfig = {
-''
+'';
 };
      
      
