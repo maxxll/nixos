@@ -12,11 +12,10 @@
       #services.httpd.adminAddr = "maxxl@tut.by";
       #services.httpd.documentRoot = "/www";
 
-services.zabbixAgent.enable = true;
-services.zabbixAgent.extraConfig = {
-UserParameter = testparameter, df -h
-'';
-
+services.zabbixAgent.extraConfig =
+    ''      
+      UserParameter=vm.memory.ksm.volatile,echo -n $((4096 * $(cat /sys/kernel/mm/ksm/pages_volatile)))
+    '';
      
    services.grafana = {
    enable = true;
