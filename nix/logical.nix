@@ -14,10 +14,9 @@
 
 services.zabbixAgent.enable = true;
 services.zabbixAgent.extraConfig =
-''
 UserParameter = testparameter, df -h
 '';
-};
+
      
    services.grafana = {
    enable = true;
