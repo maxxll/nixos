@@ -14,6 +14,35 @@
       };
       
       services.collectd.enable = true;
+      services.collectd.extraConfig =
+      ''
+      LoadPlugin memory
+      LoadPlugin uptime
+      LoadPlugin users
+      LoadPlugin cpu
+      LoadPlugin vmem
+      <Plugin vmem>
+      Verbose false
+      </Plugin>
+      
+      LoadPlugin write_graphite
+      <Plugin write_graphite>
+  <Node "Graphite"> # Имя произвольное
+    Host "127.0.0.1"
+    Port "2003"
+    Protocol "tcp"
+    LogSendErrors true
+    Prefix "collectd."
+    Postfix "collectd."
+    StoreRates true
+    AlwaysAppendDS true
+    EscapeCharacter "-"
+  </Node>
+</Plugin>
+
+
+      
+      '';
      
      
       #services.httpd.enable = true;
