@@ -7,6 +7,12 @@
     
      ## master branch xxx
      
+     services.statsd = {
+      enable = true;
+      graphiteHost = "localhost";
+      graphitePort = 2003;
+      };
+     
      
       #services.httpd.enable = true;
       #services.httpd.adminAddr = "maxxl@tut.by";
