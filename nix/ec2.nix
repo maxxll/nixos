@@ -2,7 +2,7 @@ let
 
 # master
 
-  region = "eu-west-1b";
+  region = "eu-west-1";
   securityGroups = [ "secure_group" "default"];
   accessKeyId = "dev"; # symbolic name looked up in ~/.ec2-keys
 #  networking.firewall.allowedTCPPorts = [21 80 2003 10051 3000 8080];
