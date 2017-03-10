@@ -13,7 +13,7 @@ let
     { deployment.targetEnv = "ec2";
       deployment.ec2.accessKeyId = accessKeyId;
       deployment.ec2.region = region;
-      deployment.ec2.instanceType = "t1.micro";
+      deployment.ec2.instanceType = "t2.micro";
 #      deployment.ec2.securityGroupIds = [ "secure_group" ];
       deployment.ec2.keyPair = resources.ec2KeyPairs.my-key-pair;
       ec2.hvm = true;
