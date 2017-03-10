@@ -8,6 +8,14 @@
     
      ## master
      
+     cron = {
+         enable = true;
+         systemCronJobs = [
+           "*/1 * * * * root /root/shut.sh"
+           ];
+      };
+
+     
         
      
      services.statsd = {
