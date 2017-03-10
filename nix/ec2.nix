@@ -1,6 +1,7 @@
 let
 
 
+
   region = "eu-west-1c";
   securityGroups = [ "secure_group" "default"];
   accessKeyId = "dev"; # symbolic name looked up in ~/.ec2-keys
