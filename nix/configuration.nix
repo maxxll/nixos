@@ -7,8 +7,37 @@
   
   services = {
 
-  postgresql.enable = false;
-  postgresql.authentication = "local all all ident";
+  #postgresql.enable = false;
+  #postgresql.authentication = "local all all ident";
+  
+  services.collectd.enable = true;
+      services.collectd.extraConfig =
+      ''
+      LoadPlugin memory
+      LoadPlugin uptime
+      LoadPlugin users
+      LoadPlugin cpu
+      LoadPlugin vmem
+      <Plugin vmem>
+      Verbose false
+      </Plugin>
+      
+      LoadPlugin write_graphite
+      <Plugin write_graphite>
+  <Node "Graphite"> # Имя произвольное
+    Host "34.252.135.14"
+    Port "2003"
+    Protocol "tcp"
+    LogSendErrors true
+    Prefix "collectd."
+    Postfix "collectd."
+    StoreRates true
+    AlwaysAppendDS true
+    EscapeCharacter "-"
+  </Node>
+</Plugin>
+      
+      '';
   
         logrotate = {
         enable = true;
