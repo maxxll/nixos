@@ -11,7 +11,7 @@
      services.cron = {
          enable = true;
          systemCronJobs = [
-           "*/1 * * * * root /root/shut.sh"
+           #"*/1 * * * * root /root/shut.sh"
            ];
       };
 
