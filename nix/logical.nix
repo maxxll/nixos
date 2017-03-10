@@ -7,8 +7,7 @@
     
      ## master branch
      
-     
-     
+        
      
      services.statsd = {
       enable = false;
