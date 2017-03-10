@@ -1,11 +1,12 @@
 {
   network.description = "NIXOPS server";
 
+
   nixos =
     { config, pkgs, ... }:
     { 
     
-     ## master branch
+     ## master
      
         
      
