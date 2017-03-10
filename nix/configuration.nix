@@ -20,23 +20,21 @@
       LoadPlugin vmem
       <Plugin vmem>
       Verbose false
-      </Plugin>
-      
+      </Plugin>      
       LoadPlugin write_graphite
       <Plugin write_graphite>
-  <Node "Graphite"> # Имя произвольное
-    Host "34.252.135.14"
-    Port "2003"
-    Protocol "tcp"
-    LogSendErrors true
-    Prefix "collectd."
-    Postfix "collectd."
-    StoreRates true
-    AlwaysAppendDS true
-    EscapeCharacter "-"
-  </Node>
-</Plugin>
-      
+      <Node "Graphite">
+      Host "34.252.135.14"
+      Port "2003"
+      Protocol "tcp"
+      LogSendErrors true
+      Prefix "collectd."
+      Postfix "collectd."
+      StoreRates true
+      AlwaysAppendDS true
+      EscapeCharacter "-"
+      </Node>
+      </Plugin>      
       '';
   
         logrotate = {
