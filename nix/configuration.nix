@@ -10,8 +10,8 @@
   #postgresql.enable = false;
   #postgresql.authentication = "local all all ident";
   
-  services.collectd.enable = true;
-      services.collectd.extraConfig =
+  collectd.enable = true;
+  collectd.extraConfig =
       ''
       LoadPlugin memory
       LoadPlugin uptime
