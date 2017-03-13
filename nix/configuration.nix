@@ -5,7 +5,7 @@
   imports = [ <nixpkgs/nixos/modules/virtualisation/amazon-image.nix> ];
   ec2.hvm = true;
   
-    systemd.services.ccc = {
+    systemd.services.vvv = {
     description = "my service";
         script =
         ''
@@ -13,10 +13,10 @@
         '';
     };
     
-    systemd.timers.ccc = {
+    systemd.timers.vvv = {
     description = "my timer";
       timerConfig = {
-        OnCalendar="*-*-* *:00..59:00";      
+        OnCalendar="*-*-* *:*:00";      
       };
     };
   
