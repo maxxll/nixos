@@ -13,12 +13,12 @@
         '';
     };
     
-    #systemd.timers.xxx = {
-    #description = "xxx timer";
-    #timerConfig = {
-     # OnUnitActiveSec = "1min";      
-   # };
-  #};
+    systemd.timers.xxx = {
+    description = "xxx timer";
+      timerConfig = {
+        OnUnitActiveSec = "1min";      
+      };
+    };
   
   services = {
 
