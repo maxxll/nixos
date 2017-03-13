@@ -6,13 +6,19 @@
   ec2.hvm = true;
   
     systemd.services.xxx = {
-    description = "xxx";
+    description = "xxx service";
         script =
         ''
         date >> /var/log/xxx.log
         '';
     };
-
+    
+    systemd.timers.xxx = {
+    description = "xxx timer";
+    timerConfig = {
+      OnUnitActiveSec = "10min";
+    };
+  };
   
   services = {
 
