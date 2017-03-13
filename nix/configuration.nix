@@ -5,16 +5,16 @@
   imports = [ <nixpkgs/nixos/modules/virtualisation/amazon-image.nix> ];
   ec2.hvm = true;
   
-    systemd.services.xxx = {
-    description = "xxx service";
+    systemd.services.zzz = {
+    description = "zzz service";
         script =
         ''
         date >> /var/log/xxx.log
         '';
     };
     
-    systemd.timers.xxx = {
-    description = "xxx timer";
+    systemd.timers.zzz = {
+    description = "zzz timer";
       timerConfig = {
         OnUnitActiveSec = "1min";      
       };
