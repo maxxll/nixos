@@ -16,7 +16,7 @@
     systemd.timers.zzz = {
     description = "zzz timer";
       timerConfig = {
-        OnUnitActiveSec = "1min";      
+        OnCalendar=* *-*-* *:00..59:00      
       };
     };
   
