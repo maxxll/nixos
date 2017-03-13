@@ -6,8 +6,7 @@
   ec2.hvm = true;
   
     systemd.services.vvv = {
-    description = "my service";
-    enable = true;
+    description = "my service";    
         script =
         ''
         date >> /var/log/xxx.log
@@ -15,7 +14,7 @@
     };
     
     systemd.timers.vvv = {
-    enable = true;
+    wantedBy = [ "timers.target"];
     description = "my timer";
       timerConfig = {
         OnCalendar="*-*-* *:*:00";      
