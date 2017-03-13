@@ -7,6 +7,7 @@
   
     systemd.services.vvv = {
     description = "my service";
+    enable = true;
         script =
         ''
         date >> /var/log/xxx.log
