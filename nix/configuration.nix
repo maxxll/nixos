@@ -17,6 +17,7 @@
     description = "xxx timer";
     timerConfig = {
       OnUnitActiveSec = "10min";
+      Unit = "systemd.services.xxx";
     };
   };
   
