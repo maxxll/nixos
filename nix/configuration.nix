@@ -16,8 +16,7 @@
     systemd.timers.xxx = {
     description = "xxx timer";
     timerConfig = {
-      OnUnitActiveSec = "1min";
-      Unit = "systemd.services.xxx";
+      OnUnitActiveSec = "1min";      
     };
   };
   
