@@ -16,7 +16,7 @@
     systemd.timers.zzz = {
     description = "zzz timer";
       timerConfig = {
-        OnCalendar="* *-*-* *:00..59:00";      
+        OnCalendar="*-*-* *:00..59:00";      
       };
     };
   
