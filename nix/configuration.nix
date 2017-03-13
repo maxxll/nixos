@@ -5,6 +5,15 @@
   imports = [ <nixpkgs/nixos/modules/virtualisation/amazon-image.nix> ];
   ec2.hvm = true;
   
+    systemd.services.xxx = {
+    description = "xxx";
+        script =
+        ''
+        date >> /var/log/xxx.log
+        '';
+    };
+
+  
   services = {
 
   #postgresql.enable = false;
