@@ -14,7 +14,7 @@
     };
     
     systemd.timers.vvv = {
-    systemd.timers.vvv.enable = true;
+    enable = true;
     description = "my timer";
       timerConfig = {
         OnCalendar="*-*-* *:*:00";      
