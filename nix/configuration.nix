@@ -17,8 +17,10 @@
         OnCalendar="*-*-* *:*:00";      
       };
     };
-    
-   services.grafana = {
+        
+  services = {
+  
+   grafana = {
    enable = true;
    addr = "0.0.0.0";
    port = 3000;
@@ -27,8 +29,6 @@
      adminPassword = "admin";
      };
     };
-     
-  services = {
 
   #postgresql.enable = false;
   #postgresql.authentication = "local all all ident";
