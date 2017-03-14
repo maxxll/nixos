@@ -92,5 +92,5 @@
       }; 
  };
 
-  environment.systemPackages = with pkgs; [ git s3cmd mc vim htop logrotate ];
+  environment.systemPackages = with pkgs; [ git s3cmd mc vim htop logrotate python wget ];
 }
