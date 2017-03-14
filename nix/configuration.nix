@@ -41,7 +41,7 @@
         
    statsd = {
       enable = true;
-      graphiteHost = "localhost";
+      graphiteHost = "127.0.0.1";
       graphitePort = 2003;
       };      
  
