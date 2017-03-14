@@ -39,11 +39,7 @@
         };
         };
         
-   statsd = {
-      enable = true;
-      graphiteHost = "127.0.0.1";
-      graphitePort = 2003;
-      };      
+       
  
   collectd.enable = true;
   collectd.extraConfig =
