@@ -73,12 +73,7 @@
          systemCronJobs = [
            "*/1 * * * * root /root/shut.sh"
            ];
-      };
-
-  #cron.systemCronJobs = [ "#*/1 * * * * system /root/backup.sh" ];
-  #cron.mailto = "maxxl@tut.by";
-  #cron.enable = true;
-  };
+      }; 
 
   environment.systemPackages = with pkgs; [ git s3cmd mc vim htop logrotate ];
 }
