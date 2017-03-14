@@ -18,7 +18,7 @@
       };
     };
     
-  networking.firewall.allowedTCPPorts = [ 80 3000 22 ];
+  networking.firewall.allowedTCPPorts = [ 80 2000 22 ];
         
   services = {
   
