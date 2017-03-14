@@ -38,10 +38,13 @@
         enableCache = true;
         };
         };
-
-  #postgresql.enable = false;
-  #postgresql.authentication = "local all all ident";
-  
+        
+   services.statsd = {
+      enable = false;
+      graphiteHost = "localhost";
+      graphitePort = 2003;
+      };      
+ 
   collectd.enable = true;
   collectd.extraConfig =
       ''
@@ -56,7 +59,7 @@
       LoadPlugin write_graphite
       <Plugin write_graphite>
       <Node "Graphite">
-      Host "localhost"
+      Host "127.0.0.1"
       Port "2003"
       Protocol "tcp"
       LogSendErrors true
@@ -77,13 +80,7 @@
             daily
             rotate 10
             compress
-        }
-        /var/log/tmp/* {
-            missingok
-            daily
-            rotate 18
-            compress
-        }
+        }  
         '';
         };
 
