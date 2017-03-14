@@ -40,7 +40,7 @@
         };
         
    statsd = {
-      enable = false;
+      enable = true;
       graphiteHost = "localhost";
       graphitePort = 2003;
       };      
