@@ -1,6 +1,8 @@
 { config, pkgs, lib, ... }:
 
 {
+
+    swapDevices = [ { device = "/var/swapfile"; size = 8192; } ];
  
     systemd.services.vvv = {
     description = "my service";    
