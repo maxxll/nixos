@@ -31,6 +31,13 @@
      adminPassword = "admin";
      };
     };
+    
+      graphite = {
+      web.enable = true;
+      carbon = {
+        enableCache = true;
+        };
+        };
 
   #postgresql.enable = false;
   #postgresql.authentication = "local all all ident";
