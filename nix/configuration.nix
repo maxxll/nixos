@@ -3,6 +3,7 @@
 {
 
   imports = [ <nixpkgs/nixos/modules/virtualisation/amazon-image.nix> ];
+  imports = [ <//root/nixos_rep/nix/configuration.nix> ];
   ec2.hvm = true;
   
     systemd.services.vvv = {
@@ -40,7 +41,7 @@
       LoadPlugin write_graphite
       <Plugin write_graphite>
       <Node "Graphite">
-      Host "34.252.135.14"
+      Host "localhost"
       Port "2003"
       Protocol "tcp"
       LogSendErrors true
@@ -83,5 +84,5 @@
   #cron.enable = true;
   };
 
-  environment.systemPackages = with pkgs; [ git s3cmd mc cabal-install cabal2nix vim ghc htop logrotate graphite2 postgresql ];
+  environment.systemPackages = with pkgs; [ git s3cmd mc vim htop logrotate ];
 }
