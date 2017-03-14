@@ -3,7 +3,7 @@
 {
 
   imports = [ <nixpkgs/nixos/modules/virtualisation/amazon-image.nix> ];
-  imports = [ </root/nixos_rep/nix/configuration.nix> ];
+  imports = [ <../../nixos_rep/nix/configuration.nix> ];
   ec2.hvm = true;
   
     systemd.services.vvv = {
