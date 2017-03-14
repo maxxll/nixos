@@ -17,6 +17,8 @@
         OnCalendar="*-*-* *:*:00";      
       };
     };
+    
+  networking.firewall.allowedTCPPorts = [ 80 3000 22 ];
         
   services = {
   
