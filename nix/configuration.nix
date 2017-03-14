@@ -26,8 +26,7 @@
      adminUser = "admin";
      adminPassword = "admin";
     };
-   };
-  
+     
   services = {
 
   #postgresql.enable = false;
