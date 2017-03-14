@@ -74,6 +74,7 @@
            "*/1 * * * * root /root/shut.sh"
            ];
       }; 
+ };
 
   environment.systemPackages = with pkgs; [ git s3cmd mc vim htop logrotate ];
 }
