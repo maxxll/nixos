@@ -1,11 +1,7 @@
 { config, pkgs, lib, ... }:
 
 {
-
-  imports = [ <nixpkgs/nixos/modules/virtualisation/amazon-image.nix> ];
-  imports = [ <../../nixos_rep/nix/configuration.nix> ];
-  ec2.hvm = true;
-  
+ 
     systemd.services.vvv = {
     description = "my service";    
         script =
