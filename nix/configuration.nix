@@ -25,6 +25,7 @@
    security = {
      adminUser = "admin";
      adminPassword = "admin";
+     }
     };
      
   services = {
