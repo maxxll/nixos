@@ -39,7 +39,7 @@
         };
         };
         
-   services.statsd = {
+   statsd = {
       enable = false;
       graphiteHost = "localhost";
       graphitePort = 2003;
