@@ -28,7 +28,7 @@
       enable = true;
       
       httpConfig =
-      '';
+      ''
       server {
         listen 80;
         root /www/
