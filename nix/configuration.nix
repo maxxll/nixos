@@ -30,7 +30,9 @@
       ''
        server {
         root /www/;
-        listen 80 default;       
+        listen 80 default;
+        access_log /var/log/access.log;
+        error_log /var/log/error.log;
         }
       '';
       };
