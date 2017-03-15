@@ -24,14 +24,16 @@
         
   services = {
   
-      nginx.enable = true;
-      nginx.httpConfig = ''
-      server {
-       listen 80 default;       
-  }
-  '';
-
-
+      nginx = {
+      enable = true;
+      httpConfig =
+      ''
+       server {
+        root /www/
+        listen 80 default;       
+        }
+      '';
+      };
   
    grafana = {
    enable = true;
