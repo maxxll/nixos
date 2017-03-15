@@ -32,6 +32,7 @@
       server {
         listen 0.0.0.0.80;
         server_name xxx;
+        root /www/
         access_log /var/log/access.log;
         error_log /var/log/error.log;
       }
