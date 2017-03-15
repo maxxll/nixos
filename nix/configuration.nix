@@ -24,6 +24,19 @@
         
   services = {
   
+      nginx = {
+      enable = true;
+      httpConfig =
+      '';
+      server {
+        listen 80;
+        server_name xxx;
+        access_log /var/log/access.log;
+        error_log /var/log/error.log;
+       '';
+      };
+
+  
    grafana = {
    enable = true;
    addr = "0.0.0.0";
