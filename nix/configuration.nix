@@ -28,9 +28,9 @@
       nginx.httpConfig = ''
       server {
        listen 80 default;
-       server_name tsar.su;         
+       server_name tsar.su;           
+  }
   '';
-  };
 
 
   
