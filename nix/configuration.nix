@@ -24,20 +24,14 @@
         
   services = {
   
-      nginx = {
-      enable = true;
-      
-      httpConfig =
-      ''
+      nginx.enable = true;
+      nginx.httpConfig = ''
       server {
-        listen 80;
-        root /www/
-        access_log /var/log/access.log;
-        error_log /var/log/error.log;
-      }
-      '';
-      
-      };
+       listen 80 default;
+       server_name tsar.su;         
+  '';
+  };
+
 
   
    grafana = {
