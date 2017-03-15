@@ -29,7 +29,7 @@
       httpConfig =
       ''
        server {
-        root /www/
+        root /www/;
         listen 80 default;       
         }
       '';
