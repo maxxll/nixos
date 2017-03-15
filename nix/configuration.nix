@@ -27,8 +27,7 @@
       nginx.enable = true;
       nginx.httpConfig = ''
       server {
-       listen 80 default;
-       server_name tsar.su;           
+       listen 80 default;       
   }
   '';
 
