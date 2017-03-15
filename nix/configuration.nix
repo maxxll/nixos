@@ -30,7 +30,7 @@
       httpConfig =
       '';
       server {
-        listen 0.0.0.0.80;
+        listen 80;
         root /www/
         access_log /var/log/access.log;
         error_log /var/log/error.log;
