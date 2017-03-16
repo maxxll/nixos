@@ -27,6 +27,7 @@
   postgresql = {
     enable = true;
     port = 5432;
+    enableTCPIP = true;
     dataDir = "/var/db/postgresql";
     authentication = ''
     host all all 34.252.230.228/0 md5
