@@ -29,7 +29,7 @@
     port = 5432;
     dataDir = "/var/db/postgresql";
     extraConfig = ''
-    statement_timeout = 600000;
+    statement_timeout = 600000
     '';
   };
   
