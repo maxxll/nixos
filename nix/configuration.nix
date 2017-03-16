@@ -29,7 +29,7 @@
     port = 5432;
     dataDir = "/var/db/postgresql";
     authentication = ''
-    host all all 34.252.230.228 md5
+    host all all 34.252.230.228/0 md5
     '';
     extraConfig = ''
     statement_timeout = 555000
