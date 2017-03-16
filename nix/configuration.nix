@@ -24,6 +24,12 @@
         
   services = {
   
+  postgresql = {
+    enable = true;
+    port = 5432;
+    dataDir = "/var/db/postgresql";
+  };
+  
       nginx = {
       enable = true;
       httpConfig =
