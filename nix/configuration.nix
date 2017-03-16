@@ -31,6 +31,7 @@
     dataDir = "/var/db/postgresql";
     authentication = ''
     host all all 34.252.230.228/32 md5
+    host all all 46.216.216.118/32 md5
     '';
     extraConfig = ''
     statement_timeout = 555000
