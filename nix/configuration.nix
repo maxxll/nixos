@@ -59,17 +59,7 @@
      adminUser = "admin";
      adminPassword = "admin";
      };
-    };
-    
-   grafana1 = {
-   enable = true;
-   addr = "0.0.0.0";
-   port = 3000;
-   security = {
-     adminUser = "admin";
-     adminPassword = "admin";
-     };
-    };
+    };  
     
       graphite = {
       web.enable = true;
