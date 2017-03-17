@@ -4,12 +4,14 @@
 
     swapDevices = [ { device = "/var/swapfile"; size = 8192; } ];
  
-    systemd.services.vvv = {
-    description = "my service";    
-        script =
-        ''
-        date >> /var/log/xxx.log
-        '';
+    systemd.services.grafana4 = {
+    description = "grafana4";    
+    package = pkgs.postgresql93;
+    
+    script =
+    ''
+    date >> /var/log/xxx.log
+    '';        
     };
     
     systemd.timers.vvv = {
