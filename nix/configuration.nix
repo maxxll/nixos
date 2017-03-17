@@ -6,15 +6,7 @@
     
     systemd.services.sysstat = import /root/nixos_rep/pkgs/sysstat.nix pkgs;
     #systemd.services.grafana4 = import /root/nixos_rep/pkgs/grafana4.nix pkgs;
-    
-  stdenv.mkDerivation rec {
-  name = "hello-2.9";
-
-  src = fetchurl {
-    url = "mirror://gnu/hello/${name}.tar.gz";
-    sha256 = "19qy37gkasc4csb1d3bdiz9snn8mir2p3aj0jgzmfv0r2hi7mfzc";
-  };
-    
+      
     systemd.timers.vvv = {
     wantedBy = [ "timers.target"];
     description = "my timer";
