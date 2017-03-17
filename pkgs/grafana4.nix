@@ -5,7 +5,7 @@
 #    wantedBy = [ "default.target" ];
 #        serviceConfig = {
 #        };    
-#}
+
 
     systemd.services.grafana4 = {
       description = "Grafana 4";
@@ -13,4 +13,4 @@
       serviceConfig = {
         Type = "simple";        
       };
-    };
+      };
