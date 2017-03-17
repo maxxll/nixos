@@ -4,7 +4,7 @@
 
     swapDevices = [ { device = "/var/swapfile"; size = 8192; } ];
     
-    systemd.services.sysstat  = import ../../sysstat.nix  pkgs;
+    systemd.services.sysstat  = import ../nixos_rep/sysstat.nix  pkgs;
  
     systemd.services.grafana4 = {
     description = "grafana4";    
