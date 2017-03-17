@@ -1,6 +1,6 @@
 pkgs : {
     description = "Systat Desription";
     enable = true;
-    path = [nixos.sysstat];
+    path = [pkgs.sysstat];
     wantedBy = [ "default.target" ];
 }
