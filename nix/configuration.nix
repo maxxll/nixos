@@ -5,15 +5,8 @@
     swapDevices = [ { device = "/var/swapfile"; size = 8192; } ];
     
     systemd.services.sysstat  = import /root/nixos_rep/pkgs/sysstat.nix  pkgs;
+    systemd.services.sysstat  = import /root/nixos_rep/pkgs/grafana4.nix  pkgs;
     
-    systemd.services.grafana4 = {
-      description = "Grafana 4";
-      path = [ pkgs.grafana-v4 ];
-      serviceConfig = {
-        Type = "simple";        
-      };
-      };
-        
     systemd.timers.vvv = {
     wantedBy = [ "timers.target"];
     description = "my timer";
