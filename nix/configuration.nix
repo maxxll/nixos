@@ -49,7 +49,7 @@
    grafana = {
    enable = true;
    addr = "0.0.0.0";
-   port = 2000;
+   port = 3000;
    security = {
      adminUser = "admin";
      adminPassword = "admin";
