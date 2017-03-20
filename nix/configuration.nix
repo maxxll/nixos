@@ -13,9 +13,10 @@
    serviceConfig = { 
      Type = "forking";
      ExecStart = "/var/lib/grafana4/bin/grafana-server";
-        };
-        
-    };
+     User = "root";
+     WorkingDirectory = "/var/lib/grafana4";
+   };        
+   };
 
  systemd.services.grafana4.enable = true;
       
