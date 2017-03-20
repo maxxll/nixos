@@ -9,7 +9,7 @@
    systemd.services.grafana4 = {
    description = "Grafana 4";
    wantedBy = [ "default.target" ];
-   
+   after = ["default.target" ];
    serviceConfig = { 
      ExecStart = "/var/lib/grafana4/bin/grafana-server";
         };
@@ -20,6 +20,7 @@
       
     systemd.timers.vvv = {
     wantedBy = [ "timers.target"];
+    
     description = "my timer";
       timerConfig = {
         OnCalendar="*-*-* *:*:00";      
