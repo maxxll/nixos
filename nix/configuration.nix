@@ -28,7 +28,7 @@
     authentication = ''
     host all all 34.252.230.228/32 md5
     host all all 46.216.216.118/32 md5
-    host all all 0.0.0.0/0 md5
+    local all all trust
     '';
     extraConfig = ''
     statement_timeout = 555000
@@ -56,7 +56,7 @@
    database.name = "grafana";
    database.password = "Post-1";
    database.user = "root";
-   database.type = postgresql;
+   database.type = "postgresql";
    security = {
      adminUser = "admin";
      adminPassword = "admin";
