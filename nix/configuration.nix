@@ -6,7 +6,7 @@
     
     systemd.services.sysstat = import /root/nixos_rep/pkgs/sysstat.nix pkgs;
     
-   systemd.user.services.grafana4 = {
+   systemd.services.grafana4 = {
    description = "Grafana 4";
    wantedBy = [ "default.target" ];
    
