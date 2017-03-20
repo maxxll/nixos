@@ -48,21 +48,7 @@
       '';
       };
   
-   grafana = {
-   enable = true;
-   addr = "0.0.0.0";
-   port = 4000;
-   database.host = "127.0.0.1:5432";
-   database.name = "grafana";
-   database.password = "Post-1";
-   database.user = "grafana";
-   database.type = "postgresql";
-   database.path = "/var/lib/grafana/data/grafana.db";
-   security = {
-     adminUser = "admin";
-     adminPassword = "admin";
-     };
-    };  
+   
     
       graphite = {
       web.enable = true;
