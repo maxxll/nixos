@@ -10,14 +10,11 @@
    description = "Grafana 4";
    wantedBy = [ "default.target" ];
    after = ["default.target" ];
-   preStart = ''
-   cd /var/lib/grafana4/bin/
-   '';
    serviceConfig = { 
      Type = "forking";
      ExecStart = "grafana-server";
      User = "root";
-     WorkingDirectory = "/var/lib/grafana4";
+     WorkingDirectory = "/var/lib/grafana4/bin/";
    };        
    };
 
