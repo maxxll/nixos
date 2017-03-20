@@ -10,7 +10,7 @@
    description = "Grafana 4";
    serviceConfig = { 
      ExecStart = "/var/lib/grafana4/bin/grafana-server";
-        }
+        };
    wantedBy = [ "default.target" ];
  };
 
