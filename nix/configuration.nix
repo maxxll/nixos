@@ -6,20 +6,7 @@
     
     systemd.services.sysstat = import /root/nixos_rep/pkgs/sysstat.nix pkgs;
     
-   systemd.services.grafana4 = {
-   description = "Grafana 4";
-   wantedBy = [ "default.target" ];
-   after = ["default.target" ];
-   serviceConfig = { 
-     Type = "forking";
-     ExecStart = "grafana-server";
-     User = "root";
-     WorkingDirectory = "/var/lib/grafana4/bin/";
-   };        
-   };
-
- systemd.services.grafana4.enable = true;
-      
+    
     systemd.timers.vvv = {
     wantedBy = [ "timers.target"];
     
@@ -63,7 +50,11 @@
    grafana = {
    enable = true;
    addr = "0.0.0.0";
-   port = 3000;
+   port = 4000;
+   database.host = "127.0.0.1:5432";
+   database.name = "grafana";
+   database.password = "Post-1";
+   database.user = "root";
    security = {
      adminUser = "admin";
      adminPassword = "admin";
