@@ -57,6 +57,7 @@
    database.password = "Post-1";
    database.user = "grafana";
    database.type = "postgresql";
+   database.path = "/var/lib/grafana/data/grafana.db";
    security = {
      adminUser = "admin";
      adminPassword = "admin";
