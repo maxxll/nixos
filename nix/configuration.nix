@@ -11,6 +11,7 @@
    wantedBy = [ "default.target" ];
    after = ["default.target" ];
    serviceConfig = { 
+     Type = "forking";
      ExecStart = "/var/lib/grafana4/bin/grafana-server";
         };
         
