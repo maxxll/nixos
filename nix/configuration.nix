@@ -56,7 +56,7 @@
    database.name = "grafana";
    database.password = "Post-1";
    database.user = "root";
-   database.type = "postgresql";
+   database.type = postgresql;
    security = {
      adminUser = "admin";
      adminPassword = "admin";
