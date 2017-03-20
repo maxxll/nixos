@@ -58,15 +58,15 @@
    #database.path = "/var/lib/grafana/data/grafana.db";
    
    
-  # grafana = {
-  # enable = true;
-  # addr = "0.0.0.0";
-  # port = 4000;
-  # security = {
-  #   adminUser = "admin";
-  #   adminPassword = "admin";
-  #   };
-  #  };   
+   grafana = {
+  enable = true;
+   addr = "0.0.0.0";
+   port = 3000;
+   security = {
+     adminUser = "admin";
+     adminPassword = "admin";
+     };
+    };   
     
       graphite = {
       web.enable = true;
