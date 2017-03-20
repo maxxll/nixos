@@ -8,11 +8,13 @@
     
    systemd.user.services.grafana4 = {
    description = "Grafana 4";
-   serviceConfig = { ''
+   wantedBy = [ "default.target" ];
+   
+   serviceConfig = { 
      ExecStart = "/var/lib/grafana4/bin/grafana-server";
         };
-   wantedBy = [ "default.target" ];
- };
+        
+    };
 
  systemd.services.grafana4.enable = true;
       
