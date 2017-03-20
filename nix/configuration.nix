@@ -55,7 +55,7 @@
    database.host = "127.0.0.1:5432";
    database.name = "grafana";
    database.password = "Post-1";
-   database.user = "root";
+   database.user = "grafana";
    database.type = "postgresql";
    security = {
      adminUser = "admin";
