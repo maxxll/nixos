@@ -51,7 +51,7 @@
   grafana = {
    enable = true;
    addr = "0.0.0.0";
-   port = 4000;
+   port = 3000;
    
    #database.host = "127.0.0.1:5432";
    #database.name = "grafana";
