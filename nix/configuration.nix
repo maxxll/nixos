@@ -20,6 +20,10 @@
         
   services = {
   
+  opensmtpd = { 
+    enable = true;
+  };
+  
   postgresql = {
     enable = true;
     port = 5432;
