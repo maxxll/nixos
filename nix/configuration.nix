@@ -25,7 +25,7 @@
     serverConfiguration = 
     ''
     listen on eth0
-    accept from local for any relay via smtp://34.252.218.127
+    accept from local for any relay via smtp://34.252.218.127:10025
     #accept from 34.252.218.127 for any relay    
     '';
   };
