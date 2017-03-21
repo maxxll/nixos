@@ -24,8 +24,10 @@
     enable = true;
     serverConfiguration = 
     ''
-    listen on lo
-    accept for any deliver to lmtp localhost:25  
+    listen on eth0
+    accept from local \
+    for any \
+    relay via smtp://127.0.0.1:10027  
     '';
   };
   
