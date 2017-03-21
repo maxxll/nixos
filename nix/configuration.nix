@@ -22,6 +22,11 @@
   
   opensmtpd = { 
     enable = true;
+    serverConfiguration = 
+    ''
+    listen on lo
+    accept for any deliver to lmtp localhost:25  
+    '';
   };
   
   postgresql = {
