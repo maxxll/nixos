@@ -25,10 +25,8 @@
     serverConfiguration = 
     ''
     listen on eth0
-    table aliases file:/root/aliases    
-    accept for local alias <aliases> deliver to mbox
-    accept for local for any relay
-    
+    accept for local alias deliver to mbox
+        
     #listen on eth0
     #accept from local for any relay via smtp://localhost
     #accept for any relay via smtp://localhost
