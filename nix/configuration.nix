@@ -25,7 +25,9 @@
     serverConfiguration = 
     ''
     listen on eth0
-    accept for local alias deliver to mbox
+    
+    table secrets db:/root/mail/secrets.db
+    accept for any relay via tls+auth://googlemail@smtp.googlemail.com:587 auth <secrets>
         
     #listen on eth0
     #accept from local for any relay via smtp://localhost
