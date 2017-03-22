@@ -24,7 +24,7 @@
     enable = true;
     serverConfiguration = 
     ''
-    listen on localhost
+    listen on eth0
     accept from local for any relay via smtp://localhost
     accept for any relay via smtp://localhost
     
